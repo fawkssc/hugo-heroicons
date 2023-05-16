@@ -1,0 +1,4 @@
+{{- $size := .Size | default 24 }}
+{{- $style := .Style | default 'solid' }}
+{{- $partial := print "heroicons/" $size "/" $style "/" .Icon ".svg" }}
+{{ partial $partial . }}
