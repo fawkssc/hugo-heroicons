@@ -1,0 +1,16 @@
+name = "Hugo Heroicons"
+license = "MIT"
+licenselink = "https://github.com/jefawks3/hugo-heroicons/LICENSE"
+description = "Hugo SVG partials to embed Heroicons."
+homepage = "https://github.com/jefawks3/hugo-heroicons"
+tags = ["tailwind", "hero", "icons", "heroicons"]
+features = ["embedded svg"]
+
+[author]
+  name = "James Fawks"
+  homepage = "https://jfawks.com"
+
+[original]
+  name = "Tailwind Labs"
+  homepage = "https://heroicons.com"
+  repo = "https://github.com/tailwindlabs/heroicons"
