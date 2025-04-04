@@ -2,18 +2,22 @@
   "name": "hugo-heroicons",
   "version": "1.0.0",
   "main": "src/compile.mjs",
-  "repository": "https://www.github.com/jefawks3/hugo-heroicons.git",
-  "author": "James Fawks <jefawks3@gmail.com>",
+  "repository": "https://www.github.com/fawkssc/hugo-heroicons.git",
+  "author": "Fawks Software Consulting <hello@fawkssoftwareconsulting.com>",
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "compile": "node src/compile.mjs"
+    "submodule:fix": "git sumbodule add -f https://github.com/tailwindlabs/heroicons.git heroicons",
+    "submodule:update": "git submodule update --init",
+    "compile": "node src/compile.mjs",
+    "build": "run-p submodule:update compile"
   },
   "dependencies": {
-    "glob": "^10.2.4",
-    "handlebars": "^4.7.7",
-    "html-entities": "^2.3.3",
-    "node-html-parser": "^6.1.5",
+    "glob": "^11.0.1",
+    "handlebars": "^4.7.8",
+    "html-entities": "^2.6.0",
+    "node-html-parser": "^7.0.1",
+    "npm-run-all": "^4.1.5",
     "yargs": "^17.7.2"
   }
 }
