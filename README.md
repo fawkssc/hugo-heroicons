@@ -14,7 +14,7 @@ Add the theme to your `config.toml` file
 ```toml
 [module]
 [[module.imports]]
-    path = "github.com/jefawks3/hugo-heroicons/v2"
+    path = "github.com/fawkssc/hugo-heroicons/v2"
 ```
 
 ### Install using `git`
@@ -22,7 +22,7 @@ Add the theme to your `config.toml` file
 Using `git` add the submodule under the `themes` folder.
 
 ```bash
-git submodule add https://github.com/jefawks3/hugo-heroicons themes/hugo-heroicons
+git submodule add https://github.com/fawkssc/hugo-heroicons themes/hugo-heroicons
 ```
 
 ## Configure the theme
@@ -35,5 +35,18 @@ theme = ['hugo-heroicons', 'my-theme']
 
 ## Using an icon
 
-[TODO]
 
+```html
+{{ partial "font-awesome.html" (dict "Page" . "Icon" "[Name]" [...Options]) }}
+```
+
+Options:
+- **Page** — *Required* The current context
+- **Icon** — *Required* The name of the icon to use
+- **Size** — *[16|20|24]* The size of the icon; defaults to `24`
+- **Style** — *[solid|outline]* The style of the icon; defaults to `solid`.
+- **Class** — The classnames to use with the SVG
+- **Fill** — The fill color to use; defaults to `currentColor`
+- **Style** — The css styles
+- **Width** — Set the width of the SVG
+- **Height** — Set the height of the SVG

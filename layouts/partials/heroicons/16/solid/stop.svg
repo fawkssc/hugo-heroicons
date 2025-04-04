@@ -1,0 +1,3 @@
+<svg {{ with .Class }}class="{{ . }}" {{ end }}{{ with .Width }}width="{{ . }}" {{ end }}{{ with .Height }}height="{{ . }}" {{ end }}viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"{{ with .Style }}style="{{ . }} "{{ end }}>
+    <rect x="3" y="3" rx="1.5" fill="{{ .Fill | default "currentColor" }}"></rect>
+</svg>
